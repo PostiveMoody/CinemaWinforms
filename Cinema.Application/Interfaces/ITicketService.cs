@@ -1,0 +1,4 @@
+﻿namespace Cinema.Application.Interfaces
+{
+    
+}
