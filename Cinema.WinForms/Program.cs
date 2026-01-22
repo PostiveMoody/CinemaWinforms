@@ -1,11 +1,9 @@
 using Cinema.Infrastructure.Data;
 using Cinema.Infrastructure.Repositories;
-using Cinema.WinForms.Forms;
 using Cinema.WinForms.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
 
 namespace Cinema.WinForms
 {
@@ -52,7 +50,6 @@ namespace Cinema.WinForms
 
                 // Регистрация форм
                 services.AddTransient<MainForm>();
-                services.AddTransient<CinemaBookingForm>();
 
                 return services.BuildServiceProvider();
             }
